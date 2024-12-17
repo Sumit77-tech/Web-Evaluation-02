@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif; /* font type is Arial and sans-serif*/
+    margin: 0; /* Margin will be zero*/
+    padding: 0; /* padding will be zero*/
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /*items will be aligned center*/
+    background-color: #f4f4f4; /*background color is white*/
+}
+header {
+    background-color: #333; /*header background color should be brown*/
+    color: white; /*Coloring header to white*/
+    padding: 1rem;
+    width: 100%; 
+    text-align: center; /* text should be aligned at center*/
+}
+section {
+    margin: 1rem;
+    padding: 1rem;
+    background: white; /*background color for section is white*/
+    box-shadow: 0px 0px 5px #aaa; /*box shadow is 0px for x-axis, 0px for y-axis, 5px for z-axis and color is aqent*/
+    width: 80%;
+    max-width: 600px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between; /* li items will be equally placed and have equal space in between them*/
+}
+button {
+    margin: 0.2rem;
+    padding: 0.5rem 1rem;
+    background: #007bff; /*background color for button is blue*/
+    color: white; /*button color is white in color*/
+    border: none;
+    cursor: pointer;  /* cursor should be pointer when clicked on a button*/
+    border-radius: 5px;
+}
+button:hover {
+    background: #0056b3; /*when clicking on button it will hover to blue*/
+}
+#modal {
+    position: fixed; /*position for modal id is of position fixed*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /*for modal, background, used rgba(0, 0, 0, 0.5)*/
+    display: flex;
+    justify-content: center; /*content for the modal is in center*/
+    align-items: center; /*items for the modal is in center*/
+}
+.modal-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #333; /*box shadow used 0px x-axis, 0px y-axis, 5px z-axis and aqent color*/
+    text-align: center; /* text for modal content aligns center*/
+}
+.hidden {
+    display: none; /*display for hidden class is none*/
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Organizer System</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>File Organizer System</h1>
+    </header>
+    <main>
+        <!-- Folder List Section-->
+        <section id="folders">
+            <h2>Folders</h2>
+            <ul id="folderList"></ul>
+        </section>
+        <!--File Display Section-->
+        <section id="files">
+            <h2>Files</h2>
+            <input type="text" id="searchBox" placeholder="Search files"/>
+            <button id="sortToggle">Sort: Ascending</button>
+            <div id="fileList"></div>
+        </section>
+        <!--File Bin Section-->
+        <section id="bin"> 
+            <h2>Bin</h2>
+            <button id="clearBin">Clear Bin</button>
+            <button id="restoreAll">Restore All</button>
+            <ul id="binList"></ul>
+        </section>
+        <!--Model Confirmation-->
+        <div id="modal" class="hidden">
+            <div class="modal-content">
+                <p id="modalText"></p>
+                <button id="confirm">Confirm</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
